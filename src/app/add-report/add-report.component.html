@@ -1,0 +1,33 @@
+<div class="container">
+    <form #reportForm="ngForm" (ngSubmit)="addReport(reportForm)"> <br>
+        <input type="text" 
+               name="groupId" 
+               class="form-control w-25"
+               placeholder="Enter GroupID"
+               ngModel
+        >
+        <br>
+        <input type="text" 
+               name="groupName" 
+               class="form-control w-25" 
+               placeholder="Enter GroupName"
+               ngModel
+        > 
+        <br>
+        <input type="text" 
+               name="datasetId" 
+               class="form-control w-25" 
+               placeholder="Enter DatasetID" 
+               ngModel
+        >
+        <br>
+        <input type="text" 
+               name="datasetName" 
+               class="form-control w-25" 
+               placeholder="Enter DatasetName" 
+               ngModel
+         >
+         <br>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
