@@ -7,19 +7,29 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { AddReportComponent } from './add-report/add-report.component';
+import { MainComponent } from './main/main.component';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConfirmDialogModule } from './confirm-dialog/confirm-dialog.module';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SearchComponent,
-    AddReportComponent
+    AddReportComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
+    ConfirmDialogModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

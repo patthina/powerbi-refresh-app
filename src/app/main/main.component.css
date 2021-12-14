@@ -1,0 +1,43 @@
+a.active.nav-link{
+    background-color: #24a0ed!important;
+   
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff!important;
+}
+
+#navbar {
+    background: white;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar .logo {
+    float: left;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding:20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,  
+#navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
